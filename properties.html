@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Properties — ii Miami Brokerage</title>
+<meta name="description" content="Available real estate from Irving Group, Inc., a Florida commercial real estate and business brokerage founded in 2001.">
+<meta property="og:title" content="Properties — ii Miami Brokerage">
+<meta property="og:description" content="Available real estate from Irving Group, Inc., a Florida commercial real estate and business brokerage founded in 2001.">
+<meta property="og:image" content="https://ii.miami/images/hero-poster.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="images/ig-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="images/ig-mark.png" alt="ii Miami"><span>ii MIAMI</span></a>
+    <button class="burger" id="burger" aria-label="Menu">Menu</button>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="properties.html" class="on">Properties</a></li>
+      <li><a href="development.html">Development</a></li>
+      <li><a href="jc-premier-builders.html">J &amp; C Premier Builders</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero short" style="padding:0">
+  <img src="images/2420-novus.jpg" alt="">
+  <div class="wrap">
+    <div class="eyebrow">Irving Group, Inc.</div>
+    <h1>Brokerage</h1>
+    <p>Founded in 2001 as a commercial real estate and business brokerage serving the State of Florida. Today we broker our own developments and selected investment properties.</p>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <div class="two">
+      <div class="reveal">
+        <div class="eyebrow">Available</div>
+        <h2 class="lede">Real estate currently <em>offered.</em></h2>
+      </div>
+      <div class="prose reveal"><p>Contact us for more information on whether our current investment opportunities can add value to your portfolio. Licensed Florida broker; related-party interests disclosed on every deal.</p></div>
+    </div>
+    <div class="grid two-up reveal">
+      <a class="card" href="http://www.831siesta.com" rel="noopener"><div class="ph"><img src="images/831-siesta-rendering.jpg" alt="831 Siesta Drive concept rendering" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>831 Siesta Drive</h4><p>Vacant residential lot or luxury 5+ bedroom build-to-suit</p><span class="link">831siesta.com</span></a>
+      <a class="card" href="https://www.realtor.com/realestateandhomes-detail/M9251180814" rel="noopener"><div class="ph"><img src="images/2420-novus.jpg" alt="2420 Novus Street, Sarasota" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>2420 Novus Street</h4><p>New construction · luxury single-family home</p><span class="link">View listing</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow reveal" style="display:inline-block">Brokerage inquiries</div>
+    <h2 class="lede reveal">Direct to the <em>broker.</em></h2>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="mailto:re@ii.miami?subject=RE%20Brokerage&body=Please%20send%20me%20more%20info%20on%20available%20investment%20properties.">Email re@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="brandline">ii MIAMI</div>
+      <p style="margin-top:12px;max-width:40ch">Florida development, construction and brokerage since 2001. We build what we sell.</p>
+    </div>
+    <div>
+      <h5>Companies</h5>
+      <ul>
+        <li><a href="properties.html">Irving Group, Inc. — Brokerage</a></li>
+        <li><a href="development.html">ii Miami — Development</a></li>
+        <li><a href="jc-premier-builders.html">J &amp; C Premier Builders — CBC #1266533</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="mailto:re@ii.miami">re@ii.miami</a></li>
+        <li><a href="tel:+13059002100">+1 305-900-2100</a></li>
+        <li>550 Biltmore Way, Mezzanine Ste. 200<br>Coral Gables, FL 33134</li>
+        <li style="margin-top:12px"><a href="https://www.linkedin.com/company/iimiami" rel="noopener">LinkedIn</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/@iimiami" rel="noopener">YouTube</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/ii.miami" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+    <div class="fine">
+      <span>© 2026 ii Miami. All rights reserved.</span>
+      <span>J &amp; C Premier Builders is a certified Florida building contractor, CBC #1266533.</span>
+    </div>
+  </div>
+</footer>
+<script>
+  var nav=document.getElementById('nav');
+  function onScroll(){nav.classList.toggle('solid',window.scrollY>40)} onScroll(); addEventListener('scroll',onScroll,{passive:true});
+  document.getElementById('burger').addEventListener('click',function(){document.getElementById('menu').classList.toggle('open')});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
+</body>
+</html>
