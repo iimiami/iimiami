@@ -40,7 +40,7 @@ a{color:inherit}
 .hero h1 em{font-style:italic;color:var(--accent)}
 .hero p{max-width:560px;font-size:clamp(15px,1.5vw,18px);margin:26px 0 34px;color:rgba(255,255,255,.82)}
 .hero.short{min-height:62svh}
-.hero.plain::after{display:none}
+.hero.plain::after{background:linear-gradient(180deg,rgba(15,17,19,.5) 0%,rgba(15,17,19,0) 28%)}
 .hero.short .wrap{padding:150px 0 70px}
 .eyebrow{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);font-weight:500;margin-bottom:18px}
 .eyebrow::before{content:"";display:inline-block;width:26px;height:1px;background:var(--accent);vertical-align:middle;margin-right:12px}
