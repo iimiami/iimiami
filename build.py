@@ -173,7 +173,7 @@ prop = '''
       <div class="prose reveal"><p>Contact us for more information on whether our current investment opportunities can add value to your portfolio. Licensed Florida broker; related-party interests disclosed on every deal.</p></div>
     </div>
     <div class="grid two-up reveal">
-      <a class="card" href="http://www.831siesta.com" rel="noopener"><div class="ph"><img src="images/831-siesta-rendering.jpg" alt="831 Siesta Drive concept rendering" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>831 Siesta Drive</h4><p>Vacant residential lot or luxury 5+ bedroom build-to-suit</p><span class="link">831siesta.com</span></a>
+      <a class="card" href="831-siesta.html"><div class="ph"><img src="images/831-siesta-rendering.jpg" alt="831 Siesta Drive concept rendering" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>831 Siesta Drive</h4><p>Vacant residential lot or luxury 5+ bedroom build-to-suit</p><span class="link">View property</span></a>
       <a class="card" href="https://www.realtor.com/realestateandhomes-detail/M9251180814" rel="noopener"><div class="ph"><img src="images/2420-novus.jpg" alt="2420 Novus Street, Sarasota" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>2420 Novus Street</h4><p>New construction · luxury single-family home</p><span class="link">View listing</span></a>
     </div>
   </div>
@@ -188,6 +188,56 @@ prop = '''
 </section>
 '''
 page('properties.html', 'Properties — ii Miami Brokerage', 'Available real estate from Irving Group, Inc., a Florida commercial real estate and business brokerage founded in 2001.', prop, 'prop')
+
+
+# ------------------------------------------------------------------ 831 SIESTA
+siesta = '''
+<section class="hero short" style="padding:0">
+  <img src="images/831-aerial-1.jpg" alt="831 Siesta Drive, Sarasota — aerial with Sarasota Bay beyond">
+  <div class="wrap">
+    <div class="eyebrow">Sarasota, FL · Bay Island</div>
+    <h1>831 Siesta Drive</h1>
+    <p>A rare 0.386-acre triangular homesite with exceptional privacy and the opportunity to create a distinctive elevated residence capturing light and breezes off Sarasota Bay.</p>
+    <div class="btns"><a class="btn btn-fill" href="https://www.realtor.com/realestateandhomes-detail/M5618264187" rel="noopener">Lot listing</a><a class="btn btn-line" href="mailto:re@ii.miami?subject=831%20Siesta%20Drive">Build-to-suit inquiry</a></div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <div class="two">
+      <div class="reveal">
+        <div class="eyebrow">The property</div>
+        <h2 class="lede">Vacant lot, or a luxury 5+ bedroom <em>build-to-suit.</em></h2>
+      </div>
+      <div class="prose reveal">
+        <p><strong>Property features.</strong> With over 276 ft of frontage on Siesta Drive and an unusually wide rear building area, the site supports striking architectural design, generous indoor-outdoor living, elevated terraces, and a resort-style pool concept surrounded by tropical landscaping.</p>
+        <p><strong>Location.</strong> The mainland is just over the bridge, while the powder-soft sands of Siesta Beach are minutes away, surrounded by luxury estates that elevate the neighborhood.</p>
+        <p><strong>The opportunity.</strong> A custom home can make a bold statement here, and a build-to-suit option is available through J &amp; C Premier Builders, our licensed contractor (CBC #1266533).</p>
+        <p><strong>Your next chapter.</strong> For the buyer waiting for the right property, this exceptional Bay Island homesite delivers rare convenience, privacy, and potential.</p>
+      </div>
+    </div>
+    <div class="gallery reveal">
+      <img src="images/831-rendering-large.jpg" alt="Concept rendering of a custom home at 831 Siesta Drive" loading="lazy">
+      <img src="images/831-aerial-2.jpg" alt="Aerial view toward downtown Sarasota" loading="lazy">
+      <img src="images/831-aerial-4.jpg" alt="Aerial of the parcel outline" loading="lazy">
+      <img src="images/831-aerial-5.jpg" alt="Aerial toward Siesta Key" loading="lazy">
+      <img src="images/831-south-view.jpg" alt="Parcel from above, south view" loading="lazy">
+      <img src="images/831-front.jpg" alt="Street view from Siesta Drive" loading="lazy">
+    </div>
+    <p class="caps" style="margin-top:18px;opacity:.7">Concept rendering shown for illustration; design subject to buyer selection and permitting.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow reveal" style="display:inline-block">Irving Group, Inc. · Licensed Florida broker</div>
+    <h2 class="lede reveal">Direct to the <em>broker.</em></h2>
+    <p class="reveal" style="max-width:52ch;margin:0 auto 26px">Related-party interests disclosed: Irving Group is the listing broker and J &amp; C Premier Builders is the affiliated contractor.</p>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="mailto:re@ii.miami?subject=831%20Siesta%20Drive">Email re@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
+  </div>
+</section>
+'''
+page('831-siesta.html', '831 Siesta Drive, Sarasota — Lot or Build-to-Suit', 'Rare 0.386-acre Bay Island homesite in Sarasota: vacant lot or luxury 5+ bedroom build-to-suit by J & C Premier Builders. Offered by Irving Group, Inc.', siesta, 'prop')
 
 # ------------------------------------------------------------------ DEVELOPMENT
 completed = [
@@ -289,7 +339,7 @@ jc = '''
       <a class="card" href="https://www.google.com/maps/place/14654+Lincoln+Blvd,+Miami,+FL" rel="noopener"><div class="ph"><img src="images/lincoln-blvd.jpg" alt="Lincoln Boulevard townhouses" loading="lazy"></div><div class="tag">Miami, FL</div><h4>Lincoln Boulevard</h4><p>New construction · 27 townhouses · 3/2.5 units · 14654 Lincoln Blvd</p></a>
       <a class="card" href="https://www.google.com/maps/place/2410+Novus+St,+Sarasota,+FL+34237" rel="noopener"><div class="ph"><img src="images/novus-street.jpg" alt="Novus Street homes" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>Novus Street</h4><p>New construction · 2 modern single-family homes · 2410 Novus St</p></a>
       <a class="card" href="https://519rountree.com/" rel="noopener"><div class="ph"><img src="images/519-rountree-b.jpg" alt="519 Rountree Drive, Longboat Key" loading="lazy"></div><div class="tag">Longboat Key, FL</div><h4>Rountree Drive</h4><p>New construction · luxury waterfront home · 519 Rountree Dr</p></a>
-      <a class="card" href="http://www.831siesta.com" rel="noopener"><div class="ph"><img src="images/831-siesta-aerial.jpg" alt="831 Siesta Drive aerial" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>Siesta Drive</h4><p>Land or build to suit · luxury home · 831 Siesta Dr</p></a>
+      <a class="card" href="831-siesta.html"><div class="ph"><img src="images/831-siesta-aerial.jpg" alt="831 Siesta Drive aerial" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>Siesta Drive</h4><p>Land or build to suit · luxury home · 831 Siesta Dr</p></a>
     </div>
   </div>
 </section>
