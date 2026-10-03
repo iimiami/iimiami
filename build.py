@@ -22,7 +22,7 @@ HEAD = '''<!doctype html>
 <body>
 <header class="nav" id="nav">
   <div class="wrap">
-    <a class="brand" href="index.html"><img src="images/ig-mark.png" alt="ii Miami"><span>ii MIAMI</span></a>
+    <a class="brand" href="index.html"><img src="images/logo-white.png" alt="ii.miami"></a>
     <button class="burger" id="burger" aria-label="Menu">Menu</button>
     <ul class="menu" id="menu">
       <li><a href="index.html"{on_home}>Home</a></li>
@@ -39,7 +39,7 @@ FOOT = '''
 <footer>
   <div class="wrap">
     <div>
-      <div class="brandline">ii MIAMI</div>
+      <img class="footlogo" src="images/logo-white.png" alt="ii.miami">
       <p style="margin-top:12px;max-width:40ch">Florida development, construction and brokerage since 2001. We build what we sell.</p>
     </div>
     <div>
@@ -210,13 +210,8 @@ def card(img, name, sub, u):
     return f'<a class="card" href="{href}"{rel}><div class="ph"><img src="images/{img}" alt="{name}" loading="lazy"></div><h4>{name}</h4><p>{sub}</p></a>\n'
 cards = ''.join(card(*c) for c in completed)
 dev = f'''
-<section class="hero short" style="padding:0">
-  <img src="images/oceanview-condos.jpg" alt="">
-  <div class="wrap">
-    <div class="eyebrow">ii Miami</div>
-    <h1>Development</h1>
-    <p>Residential and retail development across Florida: entitlement, design, construction and sale, run by the sponsor from start to finish.</p>
-  </div>
+<section class="hero short plain" style="padding:0">
+  <img src="images/dev-hero.jpg" alt="Build-to-rent townhomes rendering">
 </section>
 
 <section>
