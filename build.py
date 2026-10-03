@@ -1,6 +1,6 @@
 """Generates the five pages from shared header/footer so they stay consistent."""
 import os
-OUT = os.path.join(os.path.dirname(__file__), 'site')
+OUT = os.path.dirname(os.path.abspath(__file__))
 
 HEAD = '''<!doctype html>
 <html lang="en">
