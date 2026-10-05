@@ -2,15 +2,17 @@
 
 Written Oct 2, 2026, to carry this work into its own project. Everything below is the state of play; the folder this file sits in is the site itself.
 
+**Folder move, Oct 4, 2026:** all sites now live under `Cost Intelligence/Websites/` — `Company sites/ii Miami` (this folder), `Company sites/J&C Premier Builders` (the old `jcpb-redirect/`), `Property sites/519 Rountree`, `Property sites/733 Tiziano`, `Property sites/2420 Novus`. See `Websites/README.md`.
+
 ## What this is
 
 Rebuild of the ii Miami group's web presence as plain static sites, replacing GoDaddy Managed WordPress. Three domains are involved:
 
 | Domain | Status | Where it lives |
 |---|---|---|
-| **733tiziano.com** | Live on GitHub Pages, HTTPS enforced | repo `iimiami/733tiziano`; master copy in OneDrive `733 Tiziano Ave/Cost Intelligence/Web/` |
-| **ii.miami** | Rebuilt, not yet live (still on WordPress) | this folder; no repo yet |
-| **jcpb.co** | Rebuilt as a redirect to the J & C page, not yet live | `jcpb-redirect/` in this folder; no repo yet |
+| **733tiziano.com** | Live on GitHub Pages, HTTPS enforced | repo `iimiami/733tiziano`; master copy in `Websites/Property sites/733 Tiziano/` (moved Oct 4, 2026 from the 733 Tiziano Ave library's `Cost Intelligence/Web/`) |
+| **ii.miami** | LIVE on GitHub Pages since Oct 2, 2026 (DNS switched; HTTPS cert issued, Enforce HTTPS still to tick) | repo `iimiami/iimiami`; master copy is this folder |
+| **jcpb.co** | Needs nothing. jcpb.co, jcpremierbuilders.com (+ a third J & C domain) use GoDaddy *domain forwarding* → `ii.miami/jcpremier/`; the new site serves a redirect page at `/jcpremier/` → `/jc-premier-builders.html`. No DNS change, no separate site. | `jcpremier/` in this folder. Repo `iimiami/JCPB` exists with the old `jcpb-redirect/` contents + Pages/CNAME set, but is unused — left in place for now. |
 
 Also on the same GoDaddy Managed WordPress plan (Pro 5): **519rountree.com** (not touched yet) and **viafoundation.co** (stays on WordPress; the charity updates it from South America). Once ii.miami and jcpb.co move, the WordPress plan gets downgraded to a smaller tier, not cancelled.
 
@@ -33,7 +35,7 @@ Also on the same GoDaddy Managed WordPress plan (Pro 5): **519rountree.com** (no
 ## This folder (ii.miami site)
 
 - `index.html` home with muted looping video hero (`video/hero.mp4`, 5 MB; poster `images/hero-poster.jpg`)
-- `properties.html` Irving Group brokerage page (two listings: 831 Siesta Dr, 2420 Novus St)
+- `properties.html` all properties: 519 Rountree (listed by Compass), 733 Tiziano (coming soon), 831 Siesta Dr, 2420 Novus St
 - `development.html` 360-unit three-phase BTR townhouse feature plus twelve completed projects
 - `jc-premier-builders.html` J & C Premier Builders, CBC #1266533, four projects under development
 - `about.html` group overview, metrics ($525M transactions / 5-yr avg hold / 17% avg realized IRR), Coral Gables address, socials
@@ -41,14 +43,20 @@ Also on the same GoDaddy Managed WordPress plan (Pro 5): **519rountree.com** (no
 - `images/` the 468×286 photos pulled from the WordPress site; fine at card size, soft when used as page headers. Replace with originals when available.
 - `build.py` regenerates the five pages from one shared header and footer (`python3 build.py`). Edit copy there, or edit the HTML directly.
 - `CNAME` (`ii.miami`), `.nojekyll`
-- `jcpb-redirect/` a one-page site with its own `CNAME` (`jcpb.co`) that forwards to `https://ii.miami/jc-premier-builders.html`. Goes in its own repo.
+- the old `jcpb-redirect/` now lives in `../J&C Premier Builders/` (standby only; jcpb.co uses forwarding).
 - `_to_delete/` leftovers from an aborted git init; safe to delete.
 
 All copy was carried over from the WordPress site, tightened but not invented. Contact details on the site: re@ii.miami, info@ii.miami, info@jcpremierbuilders.com, +1 305-900-2100 (group), +1 813-819-0000 (J & C), 550 Biltmore Way, Mezzanine Ste. 200, Coral Gables, FL 33134.
 
+## Notes from the Oct 2 launch
+
+- Pushes over a phone-tethered connection fail above ~3 MB; the hero video was uploaded through GitHub's web UI (`Add file → Upload files` inside the `video/` folder).
+- The ii.miami certificate stalled at first; removing and re-adding the custom domain (Pages settings) fixed it within minutes.
+- Working git clone lives in the Claude session's home folder on the Mac, not in OneDrive.
+
 ## Decisions still open
 
-1. **Novus Street address:** the old site said 2410 on the J & C page and 2420 on Properties. The new site copies that. Pick one.
+1. **Novus Street address:** resolved Oct 4, 2026 — 2420 is the finished house for sale (Properties page); 2410 is the remaining lot from the original 2410 parcel, which was split in two; a future build-to-suit (J & C page). Both correct.
 2. **J & C phone:** keep the Tampa number (813-819-0000) or switch to 305-900-2100.
 3. **Page-header photos:** four sub-pages use upscaled card images as headers. Real photos of 519 Rountree, Oceanview, Gables Waterway Towers and 2420 Novus would fix it.
 4. **519rountree.com:** still on WordPress; not yet decided whether it gets rebuilt, redirected, or retired.

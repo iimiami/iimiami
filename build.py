@@ -155,11 +155,11 @@ page('index.html', 'ii Miami — We Build What We Sell', 'Florida development, c
 # ------------------------------------------------------------------ PROPERTIES / BROKERAGE
 prop = '''
 <section class="hero short" style="padding:0">
-  <img src="images/2420-novus.jpg" alt="">
+  <img src="images/519-rountree-hero.jpg" alt="">
   <div class="wrap">
-    <div class="eyebrow">Irving Group, Inc.</div>
-    <h1>Brokerage</h1>
-    <p>Founded in 2001 as a commercial real estate and business brokerage serving the State of Florida. Today we broker our own developments and selected investment properties.</p>
+    <div class="eyebrow">ii Miami</div>
+    <h1>Properties</h1>
+    <p>Homes and homesites we have built, own or are developing — for sale now or coming to market. Each is offered through its listing brokerage, noted on the property.</p>
   </div>
 </section>
 
@@ -167,12 +167,14 @@ prop = '''
   <div class="wrap">
     <div class="two">
       <div class="reveal">
-        <div class="eyebrow">Available</div>
+        <div class="eyebrow">For sale &amp; coming soon</div>
         <h2 class="lede">Real estate currently <em>offered.</em></h2>
       </div>
-      <div class="prose reveal"><p>Contact us for more information on whether our current investment opportunities can add value to your portfolio. Licensed Florida broker; related-party interests disclosed on every deal.</p></div>
+      <div class="prose reveal"><p>Every property here is owned or developed by the ii Miami group. Some are listed with our own Irving Group, Inc., a licensed Florida broker; others with outside brokerages, as noted. Related-party interests are disclosed on every deal.</p></div>
     </div>
     <div class="grid two-up reveal">
+      <a class="card" href="https://519rountree.com/" rel="noopener"><div class="ph"><img src="images/519-rountree-dusk.jpg" alt="519 Rountree Drive, Longboat Key, at dusk" loading="lazy"></div><div class="tag">Longboat Key, FL</div><h4>519 Rountree Drive</h4><p>New construction · waterfront · dock &amp; lift · listed by Compass</p><span class="link">View property</span></a>
+      <a class="card" href="https://733tiziano.com/" rel="noopener"><div class="ph"><img src="images/733-tiziano.jpg" alt="733 Tiziano Avenue, Coral Gables — oak canopy street" loading="lazy"></div><div class="tag">Coral Gables, FL</div><h4>733 Tiziano Avenue</h4><p>±10,200 sf homesite · Platinum Triangle · coming soon</p><span class="link">View property</span></a>
       <a class="card" href="831-siesta.html"><div class="ph"><img src="images/831-siesta-rendering.jpg" alt="831 Siesta Drive concept rendering" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>831 Siesta Drive</h4><p>Vacant residential lot or luxury 5+ bedroom build-to-suit</p><span class="link">View property</span></a>
       <a class="card" href="https://www.realtor.com/realestateandhomes-detail/M9251180814" rel="noopener"><div class="ph"><img src="images/2420-novus.jpg" alt="2420 Novus Street, Sarasota" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>2420 Novus Street</h4><p>New construction · luxury single-family home</p><span class="link">View listing</span></a>
     </div>
@@ -181,13 +183,13 @@ prop = '''
 
 <section class="contact" id="contact">
   <div class="wrap">
-    <div class="eyebrow reveal" style="display:inline-block">Brokerage inquiries</div>
-    <h2 class="lede reveal">Direct to the <em>broker.</em></h2>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="mailto:re@ii.miami?subject=RE%20Brokerage&body=Please%20send%20me%20more%20info%20on%20available%20investment%20properties.">Email re@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
+    <div class="eyebrow reveal" style="display:inline-block">Property inquiries</div>
+    <h2 class="lede reveal">Direct to the <em>owner.</em></h2>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="mailto:re@ii.miami?subject=Properties&body=Please%20send%20me%20more%20info%20on%20your%20available%20properties.">Email re@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
   </div>
 </section>
 '''
-page('properties.html', 'Properties — ii Miami Brokerage', 'Available real estate from Irving Group, Inc., a Florida commercial real estate and business brokerage founded in 2001.', prop, 'prop')
+page('properties.html', 'Properties — ii Miami', 'Homes and homesites built, owned or developed by the ii Miami group — for sale or coming to market in Longboat Key, Coral Gables and Sarasota.', prop, 'prop')
 
 
 # ------------------------------------------------------------------ 831 SIESTA
