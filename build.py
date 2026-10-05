@@ -54,7 +54,7 @@ FOOT = '''
     <div>
       <h5>Contact</h5>
       <ul>
-        <li><a href="mailto:re@ii.miami">re@ii.miami</a></li>
+        <li><a href="mailto:properties@ii.miami">properties@ii.miami</a></li>
         <li><a href="tel:+13059002100">+1 305-900-2100</a></li>
         <li>550 Biltmore Way, Mezzanine Ste. 200<br>Coral Gables, FL 33134</li>
         <li style="margin-top:12px"><a href="https://www.linkedin.com/company/iimiami" rel="noopener">LinkedIn</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/@iimiami" rel="noopener">YouTube</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/ii.miami" rel="noopener">Facebook</a></li>
@@ -147,7 +147,7 @@ home = '''
     <div class="eyebrow reveal" style="display:inline-block">Contact</div>
     <h2 class="lede reveal">Tell us what you're looking to <em>build, buy or back.</em></h2>
     <p class="sub reveal" style="color:#3a3e45">Investors, buyers, brokers and landowners: we answer our own phone.</p>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-dark" href="mailto:re@ii.miami?subject=ii%20Miami%20inquiry">Email</a><a class="btn btn-dark" href="tel:+13059002100">Call +1 305-900-2100</a></div>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-dark" href="mailto:properties@ii.miami?subject=ii%20Miami%20inquiry">Email</a><a class="btn btn-dark" href="tel:+13059002100">Call +1 305-900-2100</a></div>
     <div class="addr reveal" style="color:#5f646c">550 Biltmore Way, Mezzanine Ste. 200 · Coral Gables, FL 33134</div>
   </div>
 </section>
@@ -187,7 +187,7 @@ prop = '''
   <div class="wrap">
     <div class="eyebrow reveal" style="display:inline-block">Property inquiries</div>
     <h2 class="lede reveal">Direct to the <em>owner.</em></h2>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="mailto:re@ii.miami?subject=Properties&body=Please%20send%20me%20more%20info%20on%20your%20available%20properties.">Email re@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="mailto:properties@ii.miami?subject=Properties&body=Please%20send%20me%20more%20info%20on%20your%20available%20properties.">Email properties@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
   </div>
 </section>
 '''
@@ -202,7 +202,7 @@ siesta = '''
     <div class="eyebrow">Sarasota, FL · Bay Island</div>
     <h1>831 Siesta Drive</h1>
     <p>A rare 0.386-acre triangular homesite with exceptional privacy and the opportunity to create a distinctive elevated residence capturing light and breezes off Sarasota Bay.</p>
-    <div class="btns"><a class="btn btn-fill" href="https://www.realtor.com/realestateandhomes-detail/M5618264187" rel="noopener">Lot listing</a><a class="btn btn-line" href="mailto:re@ii.miami?subject=831%20Siesta%20Drive">Build-to-suit inquiry</a></div>
+    <div class="btns"><a class="btn btn-fill" href="https://www.realtor.com/realestateandhomes-detail/M5618264187" rel="noopener">Lot listing</a><a class="btn btn-line" href="mailto:properties@ii.miami?subject=831%20Siesta%20Drive">Build-to-suit inquiry</a></div>
   </div>
 </section>
 
@@ -237,7 +237,7 @@ siesta = '''
     <div class="eyebrow reveal" style="display:inline-block">Irving Group, Inc. · Licensed Florida broker</div>
     <h2 class="lede reveal">Direct to the <em>broker.</em></h2>
     <p class="reveal" style="max-width:52ch;margin:0 auto 26px">Related-party interests disclosed: Irving Group is the listing broker and J &amp; C Premier Builders is the affiliated contractor.</p>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="mailto:re@ii.miami?subject=831%20Siesta%20Drive">Email re@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="mailto:properties@ii.miami?subject=831%20Siesta%20Drive">Email properties@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
   </div>
 </section>
 '''
@@ -495,7 +495,7 @@ about = '''
   <div class="wrap">
     <div class="eyebrow reveal" style="display:inline-block">Contact</div>
     <h2 class="lede reveal">Coral <em>Gables.</em></h2>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-dark" href="mailto:re@ii.miami">re@ii.miami</a><a class="btn btn-dark" href="tel:+13059002100">+1 305-900-2100</a></div>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-dark" href="mailto:properties@ii.miami">properties@ii.miami</a><a class="btn btn-dark" href="tel:+13059002100">+1 305-900-2100</a></div>
     <div class="addr reveal" style="color:#5f646c">550 Biltmore Way, Mezzanine Ste. 200 · Coral Gables, FL 33134</div>
     <div class="addr reveal" style="color:#5f646c;margin-top:10px"><a href="https://www.linkedin.com/company/iimiami" rel="noopener" style="text-decoration:none">LinkedIn</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/@iimiami" rel="noopener" style="text-decoration:none">YouTube</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/ii.miami" rel="noopener" style="text-decoration:none">Facebook</a></div>
   </div>
