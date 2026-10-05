@@ -91,7 +91,7 @@ home = '''
   <div class="wrap">
     <div class="eyebrow">Florida · Since 2001</div>
     <h1>We build<br>what we <em>sell.</em></h1>
-    <p>Development, construction and brokerage under one roof. Twenty-five years of Florida projects, from single-family estates to 794-unit condominiums, built and sold by the same people.</p>
+    <p>Development, construction and brokerage under one roof. Twenty-five years of Florida projects, from single-family estates to 300-unit communities, built and sold by the same people.</p>
     <div class="btns"><a class="btn btn-fill" href="development.html">Our Work</a><a class="btn btn-line" href="about.html#contact">Contact</a></div>
   </div>
   <div class="scroll-hint">Scroll</div>
@@ -246,16 +246,12 @@ page('831-siesta.html', '831 Siesta Drive, Sarasota — Lot or Build-to-Suit', '
 # ------------------------------------------------------------------ DEVELOPMENT
 completed = [
  ('519-rountree.jpg','519 Rountree','Luxury SFR · Longboat Key, FL','https://519rountree.com/'),
- ('oceanview-condos.jpg','Oceanview Condos (A &amp; B)','794 units · Sunny Isles, FL',None),
  ('cedar-woods.jpg','Cedar Woods','165 units · Homestead, FL',None),
- ('gables-waterway-towers.jpg','Gables Waterway Towers','87 units · Coral Gables, FL',None),
  ('chateau-de-ville.jpg','Chateau de Ville','72 units · Dania Beach, FL',None),
  ('cedar-west.jpg','Cedar West','135 units · Homestead, FL',None),
  ('universal-plaza.jpg','Universal Plaza','Retail center · Doral, FL',None),
- ('micc.jpg','MICC','Flex retail · Doral, FL',None),
- ('shoppes-at-41st.jpg','Shoppes at 41st','Retail center · Doral, FL',None),
+ ('shoppes-at-41st.jpg','Shoppes and Doral at 41st','Retail center · Doral, FL',None),
  ('starbucks-doral.jpg','Starbucks','QSR · Doral, FL',None),
- ('doral-at-41st.jpg','Doral at 41st','Retail center · Doral, FL',None),
  ('checkers-tampa.jpg','Checkers','QSR · Tampa, FL',None),
 ]
 def card(img, name, sub, u):
@@ -304,7 +300,7 @@ dev = f'''
   </div>
 </section>
 '''
-page('development.html', 'Development — ii Miami', 'Residential and retail development across Florida. 360-unit build-to-rent townhouse community in development; 794-unit Oceanview Condos, Cedar Woods, Gables Waterway Towers and more completed.', dev, 'dev')
+page('development.html', 'Development — ii Miami', 'Residential and retail development across Florida. 360-unit build-to-rent townhouse community in development; Cedar Woods, Cedar West, Chateau de Ville and retail centers in Doral completed.', dev, 'dev')
 
 # ------------------------------------------------------------------ J & C PREMIER BUILDERS
 jc = '''
@@ -468,7 +464,7 @@ about = '''
       </div>
       <div class="prose reveal">
         <p>Each deal is its own structure, sponsor-managed, with the sponsor's own capital alongside partners'. We are now opening select long-term, income-producing holds to <a href="limited-partners.html">limited partners</a>.</p>
-        <p>Since 2001 the group has developed, built and brokered single-family estates, townhouse communities, condominium towers of up to 794 units, and retail centers for national tenants across South Florida and the Gulf Coast.</p>
+        <p>Since 2001 the group has developed, built and brokered single-family estates, townhouse communities of up to 300 units, condominiums, and retail centers for national tenants across South Florida and the Gulf Coast.</p>
       </div>
     </div>
     <div class="stats reveal">
