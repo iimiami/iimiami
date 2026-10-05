@@ -29,6 +29,7 @@ HEAD = '''<!doctype html>
       <li><a href="properties.html"{on_prop}>Properties</a></li>
       <li><a href="development.html"{on_dev}>Development</a></li>
       <li><a href="jc-premier-builders.html"{on_jc}>J &amp; C Premier Builders</a></li>
+      <li><a href="limited-partners.html"{on_invest}>Invest</a></li>
       <li><a href="about.html"{on_about}>About</a></li>
     </ul>
   </div>
@@ -77,7 +78,7 @@ FOOT = '''
 '''
 
 def page(fname, title, desc, body, on):
-    flags = {k: '' for k in ['on_home','on_prop','on_dev','on_jc','on_about']}
+    flags = {k: '' for k in ['on_home','on_prop','on_dev','on_jc','on_invest','on_about']}
     flags['on_' + on] = ' class="on"'
     html = HEAD.format(title=title, desc=desc, **flags) + body + FOOT.replace('{year}', '2026')
     with open(os.path.join(OUT, fname), 'w') as f: f.write(html)
@@ -112,18 +113,19 @@ home = '''
   <div class="wrap">
     <div class="two">
       <div class="reveal">
-        <div class="eyebrow">We ideally invest</div>
-        <h2 class="lede">Experienced developers, brokers and investors with decades of work across <em>Florida.</em></h2>
+        <div class="eyebrow">Limited partners</div>
+        <h2 class="lede">We build it, we own it, and we invite a few partners to own it <em>with us.</em></h2>
       </div>
       <div class="prose reveal">
-        <p>We maximize the exit value of each project, achieving an ideal investment for our capital partner groups. The sponsor controls the deal; partners share in the result.</p>
-        <p>Related-party brokerage, construction and asset management are disclosed up front and paid at market. No hidden fees, ever.</p>
+        <p>Since 2001 the ii Miami group has developed, built and brokered its own projects across Florida &mdash; more than 250 homes since 2005, and 300-plus units now in development. We are opening select long-term, income-producing holds to limited partners.</p>
+        <p>One sponsor controls each deal and invests alongside you. Related-party brokerage, construction and asset management are disclosed up front and paid at market. No hidden fees, ever.</p>
+        <div class="btns"><a class="btn btn-dark" href="limited-partners.html">Invest with us &rarr;</a></div>
       </div>
     </div>
     <div class="stats reveal">
-      <div class="stat"><b>$525M</b><span>Investment transactions</span></div>
-      <div class="stat"><b>5 yrs</b><span>Average hold time</span></div>
-      <div class="stat"><b>17%</b><span>Average IRR realized at sale</span></div>
+      <div class="stat"><b>250+</b><span>Homes developed since 2005</span></div>
+      <div class="stat"><b>300+</b><span>Units in development</span></div>
+      <div class="stat"><b>2001</b><span>Developing across Florida since</span></div>
     </div>
   </div>
 </section>
@@ -295,10 +297,10 @@ dev = f'''
 
 <section class="contact" id="contact">
   <div class="wrap">
-    <div class="eyebrow reveal" style="display:inline-block">Capital partners</div>
+    <div class="eyebrow reveal" style="display:inline-block">Limited partners</div>
     <h2 class="lede reveal">Deal-by-deal structures, sponsor <em>control.</em></h2>
-    <p class="sub reveal">Each project is its own entity with its own capital. Partners receive promote economics; the sponsor manages. Everything related-party is disclosed up front.</p>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="mailto:info@ii.miami?subject=Development%20inquiry">Email info@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
+    <p class="sub reveal">Each project is its own entity with its own capital. Partners receive a preferred return and share in the result; the sponsor manages. Everything related-party is disclosed up front.</p>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="limited-partners.html">How we partner</a><a class="btn btn-line" href="mailto:invest@ii.miami?subject=Limited%20partner%20interest">Email invest@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
   </div>
 </section>
 '''
@@ -357,6 +359,95 @@ jc = '''
 '''
 page('jc-premier-builders.html', 'J & C Premier Builders — Certified Florida Building Contractor', 'J & C Premier Builders, CBC #1266533. Residential and retail construction in Miami, Sarasota, Siesta Key and Longboat Key.', jc, 'jc')
 
+# ------------------------------------------------------------------ LIMITED PARTNERS
+REG = "mailto:invest@ii.miami?subject=Limited%20partner%20interest&body=Name%3A%0AEntity%20(if%20any)%3A%0AAccredited%20investor%20(yes%2Fno)%3A%0AInvestment%20range%3A%0AInterest%3A%20income%20hold%20%2F%20development%20%2F%20both%0APhone%3A%0A"
+lp = '''
+<section class="hero short" style="padding:0">
+  <img src="images/dev-hero.jpg" alt="">
+  <div class="wrap">
+    <div class="eyebrow">Limited partners</div>
+    <h1>Own the building,<br>not the <em>flip.</em></h1>
+    <p>Long-term, income-producing Florida real estate, developed and operated by people who put their own money in first.</p>
+    <div class="btns"><a class="btn btn-fill" href="''' + REG + '''">Register interest</a><a class="btn btn-line" href="#how">How it works</a></div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <div class="two">
+      <div class="reveal">
+        <div class="eyebrow">Why partner with us</div>
+        <h2 class="lede">Twenty-five years of building for <em>ourselves.</em></h2>
+      </div>
+      <div class="prose reveal">
+        <p>Since 2001 the ii Miami group has developed, built and brokered its own projects across Florida: single-family estates, townhouse communities, condominium towers and retail centers. More than 250 homes since 2005. More than 300 units in development today.</p>
+        <p>We have always invested our own capital. We are now opening select long-term holds to a small number of limited partners who want durable income from real assets and a sponsor they can call.</p>
+      </div>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><b>250+</b><span>Homes developed since 2005</span></div>
+      <div class="stat"><b>300+</b><span>Units in development</span></div>
+      <div class="stat"><b>2001</b><span>Developing across Florida since</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow reveal">Three things we will not change</div>
+    <h2 class="lede reveal">Simple structures, run by <em>owners.</em></h2>
+    <div class="pillars reveal">
+      <div class="pillar"><div class="num">01</div><h3>We develop what we own</h3><p>The principals have developed more than 250 homes since 2005 and build today through our own licensed contractor, J &amp; C Premier Builders. Partners come in beside the people who entitle, build and operate the asset.</p></div>
+      <div class="pillar"><div class="num">02</div><h3>Control stays with the sponsor</h3><p>One decision-maker, one deal at a time. No blind pool, no committee. You know exactly what you own and who is running it.</p></div>
+      <div class="pillar"><div class="num">03</div><h3>You see every fee first</h3><p>Brokerage, construction and asset management are related parties. They are named, disclosed and priced at market in the offering documents &mdash; before a dollar moves.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="how">
+  <div class="wrap">
+    <div class="two">
+      <div class="reveal">
+        <div class="eyebrow">How it works</div>
+        <h2 class="lede">What a partnership <em>looks like.</em></h2>
+      </div>
+      <div class="prose reveal">
+        <p><strong>One entity per investment.</strong> Each project is its own company with its own capital, its own lender and its own books. Nothing is cross-collateralized with anything else.</p>
+        <p><strong>Partners are paid first.</strong> Limited partners receive a preferred return before the sponsor participates in profits. Distributions from operations are paid as the property generates them.</p>
+        <p><strong>Holds are measured in years, not quarters.</strong> We buy and build to own. Partners receive a K-1 each year and a plain-language report on the asset.</p>
+        <p><strong>Accredited investors only.</strong> Terms, minimums and the full fee schedule are set out in each offering's documents.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="two">
+      <div class="reveal">
+        <div class="eyebrow">Current focus</div>
+        <h2 class="lede">Build-to-rent, held for <em>income.</em></h2>
+      </div>
+      <div class="prose reveal">
+        <p>A 300-plus-unit build-to-rent townhouse community in Central Florida, developed in phases and held for the long term. Designed, built and managed by the group, for rental income from the first certificate of occupancy.</p>
+        <p>This is for investors who want durable income from real assets, a sponsor they can call, and a structure they can read in an afternoon. It is not for anyone looking for a quick flip or a liquid product.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow reveal" style="display:inline-block">Register interest</div>
+    <h2 class="lede reveal">Tell us what you are <em>looking for.</em></h2>
+    <p class="sub reveal">A short email is enough. We will come back to you directly, and you will hear about an opportunity only when there is one.</p>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="''' + REG + '''">Email invest@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
+    <p class="sub reveal" style="font-size:12px;opacity:.7;margin-top:28px">This page describes the sponsor and its approach. It is not an offer to sell, or a solicitation of an offer to buy, any security. Offers are made only to qualified investors through the offering documents for a specific investment.</p>
+  </div>
+</section>
+'''
+page('limited-partners.html', 'Limited Partners — Invest with ii Miami', 'Long-term, income-producing Florida real estate for limited partners. Sponsor-controlled, deal-by-deal structures; every related-party fee disclosed up front. Accredited investors.', lp, 'invest')
+
 # ------------------------------------------------------------------ ABOUT
 about = '''
 <section class="hero short" style="padding:0">
@@ -376,14 +467,14 @@ about = '''
         <h2 class="lede">Maximize the exit value of every <em>project.</em></h2>
       </div>
       <div class="prose reveal">
-        <p>We maximize the exit value of each project, achieving an ideal investment for our capital partner groups. Each deal is its own structure, sponsor-managed, with the sponsor's own capital alongside partners'.</p>
+        <p>Each deal is its own structure, sponsor-managed, with the sponsor's own capital alongside partners'. We are now opening select long-term, income-producing holds to <a href="limited-partners.html">limited partners</a>.</p>
         <p>Since 2001 the group has developed, built and brokered single-family estates, townhouse communities, condominium towers of up to 794 units, and retail centers for national tenants across South Florida and the Gulf Coast.</p>
       </div>
     </div>
     <div class="stats reveal">
-      <div class="stat"><b>$525M</b><span>Investment transactions</span></div>
-      <div class="stat"><b>5 yrs</b><span>Average hold time</span></div>
-      <div class="stat"><b>17%</b><span>Average IRR realized at sale</span></div>
+      <div class="stat"><b>250+</b><span>Homes developed since 2005</span></div>
+      <div class="stat"><b>300+</b><span>Units in development</span></div>
+      <div class="stat"><b>2001</b><span>Developing across Florida since</span></div>
     </div>
   </div>
 </section>
@@ -410,4 +501,4 @@ about = '''
   </div>
 </section>
 '''
-page('about.html', 'About — ii Miami', 'The ii group of companies: experienced Florida real estate developers, brokers and investors. $525M in transactions, 17% average realized IRR.', about, 'about')
+page('about.html', 'About — ii Miami', 'The ii group of companies: Florida real estate developers, brokers and investors since 2001. More than 250 homes developed since 2005; 300-plus units in development.', about, 'about')
