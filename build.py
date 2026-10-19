@@ -285,7 +285,6 @@ novus = '''
         <p><strong>The plan.</strong> The great room rises to a 20-foot ceiling, with 10-foot ceilings through the rest of the first floor. The primary suite is downstairs with a walk-in closet and a double-vanity bath, and so is a guest bedroom with its own full bath off the foyer. Upstairs: two more bedrooms, two baths, a bonus room and a deck over the lanai. Laundry on both floors.</p>
         <p><strong>The kitchen.</strong> A 12-foot island, a 48-inch dual-fuel range and hood, a 42-inch built-in refrigerator, wine refrigerator, quartz counters, solid wood Shaker cabinetry and a pantry. It opens straight to the dining area and the covered lanai, with its outdoor kitchen: gas grill, sink and refrigerator.</p>
         <p><strong>Built for Florida.</strong> Not in a flood zone. Solid block construction on both floors, impact windows and doors, a metal roof. Generator-ready, with the 500-gallon propane tank already in, so the house keeps running after a storm. Elevator-ready, with the shaft framed and pre-wired on both floors. Lutron smart home, wired security, dual-zone AC, tankless gas water heater.</p>
-        <p><strong>Your finishes.</strong> A buyer under contract early chooses the paint, flooring and finishes.</p>
       </div>
     </div>
   </div>
@@ -312,7 +311,7 @@ novus = '''
         <h2 class="lede">Two floors, <em>drawn.</em></h2>
       </div>
       <div class="prose reveal">
-        <p>First floor 1,769 SF under air; second floor 1,034 SF. Entry, garage and lanai add 594 SF, for 3,396 SF in total. Both floors are drawn to the same scale and stacked in register: the open-below area upstairs sits directly over the two-story great room, and the elevator shaft lines up floor to floor. Click a plan to open it full size.</p>
+        <p>First floor 1,769 SF under air; second floor 1,034 SF. Entry, garage and lanai add 594 SF, for 3,396 SF in total. Click a plan to open it full size.</p>
         <div class="btns" style="margin-top:22px"><a class="btn btn-dark" href="docs/2420-Novus-Floor-Plans.pdf" download>Download floor plans (PDF)</a></div>
       </div>
     </div>
