@@ -136,7 +136,7 @@ home = '''
     <h2 class="lede reveal">On the ground <em>now.</em></h2>
     <div class="grid reveal">
       <a class="card" href="development.html"><div class="ph"><img src="images/lincoln-blvd.jpg" alt="Lincoln Boulevard townhouses rendering" loading="lazy"></div><div class="tag">Miami</div><h4>Lincoln Boulevard</h4><p>New construction · 27 townhouses · 3/2.5</p></a>
-      <a class="card" href="properties.html"><div class="ph"><img src="images/2420-novus.jpg" alt="2420 Novus Street, Sarasota" loading="lazy"></div><div class="tag">Sarasota</div><h4>Novus Street</h4><p>New construction · luxury single-family</p></a>
+      <a class="card" href="2420-novus.html"><div class="ph"><img src="images/2420-novus.jpg" alt="2420 Novus Street, Sarasota" loading="lazy"></div><div class="tag">Sarasota</div><h4>Novus Street</h4><p>New construction · luxury single-family</p></a>
       <a class="card" href="properties.html"><div class="ph"><img src="images/831-siesta-rendering.jpg" alt="831 Siesta Drive rendering" loading="lazy"></div><div class="tag">Sarasota</div><h4>831 Siesta Drive</h4><p>Land or build-to-suit · luxury 5+ bedroom</p></a>
     </div>
   </div>
@@ -178,7 +178,7 @@ prop = '''
       <a class="card" href="https://519rountree.com/" rel="noopener"><div class="ph"><img src="images/519-rountree-dusk.jpg" alt="519 Rountree Drive, Longboat Key, at dusk" loading="lazy"></div><div class="tag">Longboat Key, FL</div><h4>519 Rountree Drive</h4><p>New construction · waterfront · dock &amp; lift · listed by Compass</p><span class="link">View property</span></a>
       <a class="card" href="https://733tiziano.com/" rel="noopener"><div class="ph"><img src="images/733-tiziano.jpg" alt="733 Tiziano Avenue, Coral Gables — oak canopy street" loading="lazy"></div><div class="tag">Coral Gables, FL</div><h4>733 Tiziano Avenue</h4><p>±10,200 sf homesite · Platinum Triangle · coming soon</p><span class="link">View property</span></a>
       <a class="card" href="831-siesta.html"><div class="ph"><img src="images/831-siesta-rendering.jpg" alt="831 Siesta Drive concept rendering" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>831 Siesta Drive</h4><p>Vacant residential lot or luxury 5+ bedroom build-to-suit</p><span class="link">View property</span></a>
-      <a class="card" href="https://www.realtor.com/realestateandhomes-detail/M9251180814" rel="noopener"><div class="ph"><img src="images/2420-novus.jpg" alt="2420 Novus Street, Sarasota" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>2420 Novus Street</h4><p>New construction · luxury single-family home</p><span class="link">View listing</span></a>
+      <a class="card" href="2420-novus.html"><div class="ph"><img src="images/2420-novus.jpg" alt="2420 Novus Street, Sarasota" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>2420 Novus Street</h4><p>New construction · 4 bed / 4 bath · pool · $2,250,000</p><span class="link">View property</span></a>
     </div>
   </div>
 </section>
@@ -242,6 +242,114 @@ siesta = '''
 </section>
 '''
 page('831-siesta.html', '831 Siesta Drive, Sarasota — Lot or Build-to-Suit', 'Rare 0.386-acre Bay Island homesite in Sarasota: vacant lot or luxury 5+ bedroom build-to-suit by J & C Premier Builders. Offered by Irving Group, Inc.', siesta, 'prop')
+
+# ------------------------------------------------------------------ 2420 NOVUS
+# Short URL: ii.miami/2420novus (redirect stub in 2420novus/index.html).
+# MLS: Stellar MLS #A4705517, listed by James Irving, Irving Group, Inc.
+NOVUS_MLS = 'https://www.realtor.com/realestateandhomes-detail/M9251180814'
+NOVUS_MAIL = 'mailto:2420@ii.miami?subject=2420%20Novus%20Street'
+novus = '''
+<section class="hero short split" style="padding:0">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Sarasota, FL · East of the Trail · New construction</div>
+      <h1>2420 Novus <em>Street</em></h1>
+      <p>A new two-story contemporary on a canopied street, directly across from the Legacy Trail and five minutes from downtown Sarasota. Four bedrooms, four full baths, a 20-foot great room, heated saltwater pool and spa. Completion October 2026.</p>
+      <div class="btns"><a class="btn btn-fill" href="''' + NOVUS_MLS + '''" rel="noopener">View MLS listing</a><a class="btn btn-line" href="''' + NOVUS_MAIL + '''&body=I%27d%20like%20to%20schedule%20a%20showing.">Schedule a showing</a></div>
+    </div>
+    <figure class="split-ph"><img src="images/2420-novus.jpg" alt="Rendering of 2420 Novus Street: a two-story contemporary with a stone-clad entry and a two-car garage"><figcaption>Rendering</figcaption></figure>
+  </div>
+</section>
+
+<section class="light" style="padding-top:0">
+  <div class="wrap">
+    <div class="stats six">
+      <div class="stat"><b>$2,250,000</b><span>List price</span></div>
+      <div class="stat"><b>4 / 4</b><span>Bedrooms / full baths</span></div>
+      <div class="stat"><b>2,802</b><span>SF under air</span></div>
+      <div class="stat"><b>3,396</b><span>SF total</span></div>
+      <div class="stat"><b>2-car</b><span>Garage · bonus room</span></div>
+      <div class="stat"><b>Oct 2026</b><span>Est. completion</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="light" style="padding-top:20px">
+  <div class="wrap">
+    <div class="two">
+      <div class="reveal">
+        <div class="eyebrow">The house</div>
+        <h2 class="lede">Close to it all, in a house that is <em>new.</em></h2>
+      </div>
+      <div class="prose reveal">
+        <p><strong>The plan.</strong> The great room rises to a 20-foot ceiling, with 10-foot ceilings through the rest of the first floor. The primary suite is downstairs with a walk-in closet and a double-vanity bath, and so is a guest bedroom with its own full bath off the foyer. Upstairs: two more bedrooms, two baths, a bonus room and a deck over the lanai. Laundry on both floors.</p>
+        <p><strong>The kitchen.</strong> A 12-foot island, a 48-inch dual-fuel range and hood, a 42-inch built-in refrigerator, wine refrigerator, quartz counters, solid wood Shaker cabinetry and a pantry. It opens straight to the dining area and the covered lanai, with its outdoor kitchen: gas grill, sink and refrigerator.</p>
+        <p><strong>Built for Florida.</strong> Not in a flood zone. Solid block construction on both floors, impact windows and doors, a metal roof. Generator-ready, with the 500-gallon propane tank already in, so the house keeps running after a storm. Elevator-ready, with the shaft framed and pre-wired on both floors. Lutron smart home, wired security, dual-zone AC, tankless gas water heater.</p>
+        <p><strong>Your finishes.</strong> A buyer under contract early chooses the paint, flooring and finishes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow reveal">Features</div>
+    <h2 class="lede reveal">What comes <em>with it.</em></h2>
+    <div class="specs reveal">
+      <div><h4>Structure</h4><ul><li>Not in a flood zone</li><li>Solid block, both floors</li><li>Impact windows and doors</li><li>Metal roof</li><li>Elevator-ready, shaft pre-wired</li></ul></div>
+      <div><h4>Living</h4><ul><li>20-ft great room ceiling</li><li>10-ft ceilings, first floor</li><li>First-floor primary suite</li><li>First-floor guest suite</li><li>Upstairs bonus room and deck</li></ul></div>
+      <div><h4>Outdoors</h4><ul><li>Heated saltwater pool and spa</li><li>Sun shelf</li><li>Covered lanai</li><li>Outdoor kitchen: grill, sink, refrigerator</li><li>Two-car garage</li></ul></div>
+      <div><h4>Systems</h4><ul><li>Generator-ready, 500-gal LP tank</li><li>Lutron smart home</li><li>Wired security</li><li>Dual-zone AC</li><li>Tankless gas water heater</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="plans">
+  <div class="wrap">
+    <div class="two">
+      <div class="reveal">
+        <div class="eyebrow">Floor plans</div>
+        <h2 class="lede">Two floors, <em>drawn.</em></h2>
+      </div>
+      <div class="prose reveal">
+        <p>First floor 1,769 SF under air; second floor 1,034 SF. Entry, garage and lanai add 594 SF, for 3,396 SF in total. Both floors are drawn to the same scale and stacked in register: the open-below area upstairs sits directly over the two-story great room, and the elevator shaft lines up floor to floor. Click a plan to open it full size.</p>
+        <div class="btns" style="margin-top:22px"><a class="btn btn-dark" href="docs/2420-Novus-Floor-Plans.pdf" download>Download floor plans (PDF)</a></div>
+      </div>
+    </div>
+    <div class="plans stacked reveal">
+      <a href="images/2420-plan-second.png"><span>Second floor · 1,034 SF</span><img src="images/2420-plan-second.png" alt="2420 Novus Street, second-floor plan: bedrooms 2 and 3, two baths, bonus room, deck, open to the great room below" loading="lazy"></a>
+      <a href="images/2420-plan-first.png"><span>First floor · 1,769 SF</span><img src="images/2420-plan-first.png" alt="2420 Novus Street, first-floor plan: great room, kitchen, dining, primary suite, guest bedroom and bath, laundry, garage, lanai, pool" loading="lazy"></a>
+    </div>
+    <p class="caps" style="margin-top:18px;opacity:.7">Plans and rendering are illustrative; dimensions approximate. Buyers should verify.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="two">
+      <div class="reveal">
+        <div class="eyebrow">Location</div>
+        <h2 class="lede">The trail at the door. Downtown <em>in five.</em></h2>
+      </div>
+      <div class="prose reveal">
+        <p>Novus Street is a canopied, tree-lined street East of the Trail. The Legacy Trail runs directly across from the house, and Payne Park is a walk. Downtown Sarasota and Southside Village are five minutes away; Siesta Key and I-75 about fifteen.</p>
+        <div class="btns" style="margin-top:22px"><a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=2420+Novus+St+Sarasota+FL+34237" rel="noopener">Open in Google Maps</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact light" id="contact">
+  <div class="wrap">
+    <div class="eyebrow reveal" style="display:inline-block">Irving Group, Inc. · Licensed Florida broker</div>
+    <h2 class="lede reveal">Direct to the <em>broker.</em></h2>
+    <p class="reveal" style="max-width:56ch;margin:20px auto 26px;color:#3a3e45">Related-party interests disclosed: Irving Group is the listing broker, ii Miami the developer and J &amp; C Premier Builders the affiliated contractor. Brokers: we cooperate, with compensation confirmed in writing before any showing.</p>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-dark" href="''' + NOVUS_MAIL + '''">Email 2420@ii.miami</a><a class="btn btn-dark" href="tel:+13059002100">+1 305-900-2100</a><a class="btn btn-dark" href="''' + NOVUS_MLS + '''" rel="noopener">MLS listing</a></div>
+    <div class="addr reveal" style="color:#5f646c">2420 Novus Street, Sarasota, FL 34237 · Stellar MLS #A4705517</div>
+  </div>
+</section>
+'''
+page('2420-novus.html', '2420 Novus Street, Sarasota — New Construction', 'New two-story contemporary East of the Trail in Sarasota, across from the Legacy Trail: 4 bedrooms, 4 baths, 2,802 SF, pool and spa, not in a flood zone. $2,250,000. Listed by Irving Group, Inc.', novus, 'prop')
 
 # ------------------------------------------------------------------ DEVELOPMENT
 completed = [

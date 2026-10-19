@@ -152,3 +152,36 @@ footer .brandline{font-family:var(--serif);font-size:18px;letter-spacing:.16em;c
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px}
 .gallery img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
 @media(max-width:760px){.gallery{grid-template-columns:1fr 1fr}}
+
+/* ---------- property page: split hero, six stats, specs, plans (2420 Novus) ---------- */
+.hero.split{min-height:auto}
+.hero.split::after{display:none}
+.hero.split .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:150px 0 80px}
+.hero.split h1{max-width:none}
+.split-ph{margin:0;border:1px solid var(--line);background:var(--ink-3);position:relative}
+.split-ph img{width:100%;height:auto}
+.split-ph figcaption{position:absolute;right:12px;bottom:10px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.8);text-shadow:0 1px 3px rgba(0,0,0,.6)}
+@media (max-width:900px){.hero.split .wrap{grid-template-columns:1fr;gap:36px;padding:120px 0 60px}}
+.stats.six{grid-template-columns:repeat(6,1fr);margin-top:0;border-top:0}
+.stats.six .stat{padding:30px 18px}
+.stats.six .stat b{font-size:34px}
+@media (max-width:1000px){.stats.six{grid-template-columns:repeat(3,1fr)}.stats.six .stat:nth-child(3){border-right:0}.stats.six .stat:nth-child(-n+3){border-bottom:1px solid var(--line-dark)}}
+@media (max-width:560px){.stats.six{grid-template-columns:repeat(2,1fr)}.stats.six .stat{border-right:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark)}.stats.six .stat:nth-child(2n){border-right:0}}
+.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:48px}
+@media (max-width:960px){.specs{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.specs{grid-template-columns:1fr}}
+.specs > div{background:var(--ink);padding:32px 28px}
+.specs h4{font-family:var(--serif);font-weight:500;font-size:26px;margin-bottom:14px}
+.specs ul{list-style:none}
+.specs li{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.78);padding:10px 0;border-bottom:1px solid var(--line)}
+.specs li:last-child{border-bottom:0}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px;align-items:start}
+@media (max-width:760px){.plans{grid-template-columns:1fr}}
+.plans a{display:block;background:#fff;border:1px solid var(--line-dark);padding:16px;text-decoration:none;color:var(--ink)}
+.plans img{width:100%;height:auto}
+.plans span{display:block;margin-top:12px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted-dark)}
+.plans.stacked{grid-template-columns:1fr;gap:0}
+.plans.stacked a{padding:14px 18px 18px}
+.plans.stacked a + a{border-top:0}
+.plans.stacked span{margin:0 0 10px}
+.plans.stacked img{width:100%;height:auto}
