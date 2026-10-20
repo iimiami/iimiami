@@ -254,7 +254,7 @@ novus = '''
     <div>
       <div class="eyebrow">Sarasota, FL · East of the Trail · New construction</div>
       <h1>2420 Novus <em>Street</em></h1>
-      <p>A new two-story contemporary on a canopied street, directly across from the Legacy Trail and five minutes from downtown Sarasota. Four bedrooms, four full baths, a 20-foot great room, heated saltwater pool and spa. Completion October 2026.</p>
+      <p>A new two-story contemporary on a canopied street, directly across from the Legacy Trail and five minutes from downtown Sarasota. Four bedrooms, four full baths, a 20-foot great room, heated saltwater pool and spa. Completion October 2026. The same-size lot next door is available to the buyer.</p>
       <div class="btns"><a class="btn btn-fill" href="''' + NOVUS_MLS + '''" rel="noopener">View MLS listing</a><a class="btn btn-line" href="''' + NOVUS_MAIL + '''&body=I%27d%20like%20to%20schedule%20a%20showing.">Schedule a showing</a></div>
     </div>
     <figure class="split-ph"><img src="images/2420-novus.jpg" alt="Rendering of 2420 Novus Street: a two-story contemporary with a stone-clad entry and a two-car garage"><figcaption>Rendering</figcaption></figure>
@@ -338,13 +338,29 @@ novus = '''
   </div>
 </section>
 
-<section class="contact light" id="contact">
+<section class="light" id="lot">
+  <div class="wrap">
+    <div class="two">
+      <div class="reveal">
+        <div class="eyebrow">2410 Novus Street</div>
+        <h2 class="lede">The lot next door, <em>if you want it.</em></h2>
+      </div>
+      <div class="prose reveal">
+        <p>2410 Novus is the same-size lot directly beside the house, split from the same original parcel. It is available to the buyer of 2420, either as land or as a build-to-suit by J &amp; C Premier Builders.</p>
+        <p>Buying both gives you room few homes this close to downtown have: more space, a second home for family, or future expansion. Any construction is subject to zoning and permitting.</p>
+        <div class="btns" style="margin-top:22px"><a class="btn btn-dark" href="mailto:2420@ii.miami?subject=2420%20and%202410%20Novus&body=I%27m%20interested%20in%20buying%202420%20Novus%20together%20with%20the%20lot%20next%20door.">Ask about buying both</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
   <div class="wrap">
     <div class="eyebrow reveal" style="display:inline-block">Irving Group, Inc. · Licensed Florida broker</div>
     <h2 class="lede reveal">Direct to the <em>broker.</em></h2>
-    <p class="reveal" style="max-width:56ch;margin:20px auto 26px;color:#3a3e45">Related-party interests disclosed: Irving Group is the listing broker, ii Miami the developer and J &amp; C Premier Builders the affiliated contractor. Brokers: we cooperate, with compensation confirmed in writing before any showing.</p>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-dark" href="''' + NOVUS_MAIL + '''">Email 2420@ii.miami</a><a class="btn btn-dark" href="tel:+13059002100">+1 305-900-2100</a><a class="btn btn-dark" href="''' + NOVUS_MLS + '''" rel="noopener">MLS listing</a></div>
-    <div class="addr reveal" style="color:#5f646c">2420 Novus Street, Sarasota, FL 34237 · Stellar MLS #A4705517</div>
+    <p class="reveal" style="max-width:56ch;margin:20px auto 26px;color:rgba(255,255,255,.75)">Related-party interests disclosed: Irving Group is the listing broker, ii Miami the developer and J &amp; C Premier Builders the affiliated contractor. Brokers: we cooperate, with compensation confirmed in writing before any showing.</p>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="''' + NOVUS_MAIL + '''">Email 2420@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a><a class="btn btn-line" href="''' + NOVUS_MLS + '''" rel="noopener">MLS listing</a></div>
+    <div class="addr reveal">2420 Novus Street, Sarasota, FL 34237 · Stellar MLS #A4705517</div>
   </div>
 </section>
 '''
