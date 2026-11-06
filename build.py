@@ -421,7 +421,7 @@ dev = f'''
     <div class="eyebrow reveal" style="display:inline-block">Limited partners</div>
     <h2 class="lede reveal">Deal-by-deal structures, sponsor <em>control.</em></h2>
     <p class="sub reveal">Each project is its own entity with its own capital. Partners receive a preferred return and share in the result; the sponsor manages. Everything related-party is disclosed up front.</p>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="limited-partners.html">How we partner</a><a class="btn btn-line" href="mailto:invest@ii.miami?subject=Limited%20partner%20interest">Email invest@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="limited-partners.html">How we partner</a><a class="btn btn-line" href="mailto:invest@ii.miami?subject=Limited%20partner%20interest">Email invest@ii.miami</a><a class="btn btn-line" href="tel:+13057031500">+1 305-703-1500</a></div>
   </div>
 </section>
 '''
@@ -501,7 +501,7 @@ landp = """
     <div class="eyebrow reveal" style="display:inline-block">Our promise</div>
     <h2 class="lede reveal">If we can't help, we'll tell you within <em>24 hours.</em></h2>
     <p class="sub reveal">Led by a licensed Florida real estate broker since 1988, developing our own projects since 2004.</p>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href=\"""" + LAND_MAIL + """\">Email properties@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">Call +1 305-900-2100</a></div>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href=\"""" + LAND_MAIL + """\">Email properties@ii.miami</a><a class="btn btn-line" href="tel:+13057031500">Call +1 305-703-1500</a></div>
     <p class="sub reveal" style="font-size:12px;opacity:.7;margin-top:28px">Every structure is reviewed by your own attorney before anything is signed. This page describes ways landowners and churches can work with a developer. It is not an offer to sell or buy any investment.</p>
   </div>
 </section>
@@ -516,7 +516,7 @@ jc = '''
     <div class="eyebrow">Certified Florida Building Contractor · CBC #1266533</div>
     <h1>J &amp; C Premier <em>Builders</em></h1>
     <p>A partnership of experienced residential and commercial developers, serving Florida for over 30 years. Currently building in Miami, Sarasota, Siesta Key and Longboat Key.</p>
-    <div class="btns"><a class="btn btn-fill" href="mailto:info@jcpremierbuilders.com?subject=JC%20Premier&body=Please%20send%20me%20more%20info%20on%20JC%20Premier%20Builders.">Email</a><a class="btn btn-line" href="tel:+18138190000">Call +1 813-819-0000</a></div>
+    <div class="btns"><a class="btn btn-fill" href="mailto:info@jcpremierbuilders.com?subject=JC%20Premier&body=Please%20send%20me%20more%20info%20on%20JC%20Premier%20Builders.">Email</a><a class="btn btn-line" href="tel:+13057031500">Call +1 305-703-1500</a></div>
   </div>
 </section>
 
@@ -554,7 +554,7 @@ jc = '''
   <div class="wrap">
     <div class="eyebrow reveal" style="display:inline-block">J &amp; C Premier Builders</div>
     <h2 class="lede reveal">Have a lot, a plan, or <em>both?</em></h2>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-dark" href="mailto:info@jcpremierbuilders.com?subject=JC%20Premier">info@jcpremierbuilders.com</a><a class="btn btn-dark" href="tel:+18138190000">+1 813-819-0000</a></div>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-dark" href="mailto:info@jcpremierbuilders.com?subject=JC%20Premier">info@jcpremierbuilders.com</a><a class="btn btn-dark" href="tel:+13057031500">+1 305-703-1500</a></div>
     <div class="addr reveal" style="color:#5f646c">Certified Florida Building Contractor · CBC #1266533</div>
   </div>
 </section>
@@ -582,7 +582,7 @@ lp = '''
         <h2 class="lede">Building for <em>ourselves</em> since 2004.</h2>
       </div>
       <div class="prose reveal">
-        <p>Since 2004 ii Miami has developed, built and sold its own projects across Florida: single-family estates, townhouse communities, condominium towers and retail centers. More than 250 homes since 2005. More than 300 units in development today.</p>
+        <p>Since 2004 ii Miami has developed, built and sold its own projects across Florida: single-family estates, townhouse communities and retail centers. More than 250 homes since 2005. More than 300 units in development today.</p>
         <p>We have always invested our own capital. We are now opening select long-term holds to a small number of limited partners who want durable income from real assets and a sponsor they can call.</p>
       </div>
     </div>
@@ -643,7 +643,7 @@ lp = '''
     <div class="eyebrow reveal" style="display:inline-block">Register interest</div>
     <h2 class="lede reveal">Tell us what you are <em>looking for.</em></h2>
     <p class="sub reveal">A short email is enough. We will come back to you directly, and you will hear about an opportunity only when there is one.</p>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="''' + REG + '''">Email invest@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">+1 305-900-2100</a></div>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href="''' + REG + '''">Email invest@ii.miami</a><a class="btn btn-line" href="tel:+13057031500">+1 305-703-1500</a></div>
     <p class="sub reveal" style="font-size:12px;opacity:.7;margin-top:28px">This page describes the sponsor and its approach. It is not an offer to sell, or a solicitation of an offer to buy, any security. Offers are made only to qualified investors through the offering documents for a specific investment.</p>
   </div>
 </section>
@@ -653,7 +653,7 @@ page('limited-partners.html', 'Limited Partners — Invest with ii Miami', 'Long
 # ------------------------------------------------------------------ ABOUT
 about = '''
 <section class="hero short" style="padding:0">
-  <img src="images/gables-waterway-towers.jpg" alt="">
+  <img src="images/hero-poster.jpg" alt="">
   <div class="wrap">
     <div class="eyebrow">About</div>
     <h1>We ideally <em>invest.</em></h1>
@@ -670,7 +670,7 @@ about = '''
       </div>
       <div class="prose reveal">
         <p>Each deal is its own structure, sponsor-managed, with the sponsor's own capital alongside partners'. We are now opening select long-term, income-producing holds to <a href="limited-partners.html">limited partners</a>.</p>
-        <p>Since 2004 the group has developed, built and sold single-family estates, townhouse communities, condominiums, and retail centers for national tenants across South Florida and the Gulf Coast.</p>
+        <p>Since 2004 the group has developed, built and sold single-family estates, townhouse communities and retail centers for national tenants across South Florida and the Gulf Coast.</p>
         <p>The group is led by James Irving, a licensed Florida real estate broker since 1988, who founded Irving Group in 2001 and ii Miami in 2004.</p>
       </div>
     </div>
