@@ -29,7 +29,7 @@ HEAD = '''<!doctype html>
       <li><a href="index.html"{on_home}>Home</a></li>
       <li><a href="properties.html"{on_prop}>Properties</a></li>
       <li><a href="development.html"{on_dev}>Development</a></li>
-      <li><a href="landowners.html"{on_land}>Landowners</a></li>
+      <li><a href="landowners.html"{on_land}>Churches &amp; Land</a></li>
       <li><a href="jc-premier-builders.html"{on_jc}>J &amp; C Premier Builders</a></li>
       <li><a href="limited-partners.html"{on_invest}>Invest</a></li>
       <li><a href="about.html"{on_about}>About</a></li>
@@ -392,7 +392,7 @@ dev = f'''
 <section>
   <div class="wrap">
     <div class="feature">
-      <div class="ph reveal"><img src="images/dev-hero.jpg" alt="Build-to-rent townhouse community rendering" loading="lazy"></div>
+      <div class="ph reveal"><img src="images/yorgo-site-plan.jpg" alt="Rendering of the Central Florida build-to-rent townhouse community" loading="lazy"></div>
       <div class="reveal">
         <div class="eyebrow">In development</div>
         <h2 class="lede">Three-phase build-to-rent <em>townhouse</em> community.</h2>
@@ -435,7 +435,7 @@ landp = """
 <section class="hero short" style="padding:0">
   <img src="images/lincoln-rendering.jpg" alt="">
   <div class="wrap">
-    <div class="eyebrow">Landowners &amp; churches</div>
+    <div class="eyebrow">Churches &amp; landowners</div>
     <h1>Keep your land <em>working.</em></h1>
     <p>Your land can build homes and income for your church or family, without selling it for a one-time check.</p>
     <div class="btns"><a class="btn btn-fill" href=\"""" + LAND_MAIL + """\">Talk with us</a><a class="btn btn-line" href="#how">How it works</a></div>
@@ -506,7 +506,7 @@ landp = """
   </div>
 </section>
 """
-page('landowners.html', 'Landowners & Churches — ii Miami', 'For churches and landowners in Florida: build homes and income on your land without selling it. Your land becomes your stake, with a clear path to full ownership.', landp, 'land')
+page('landowners.html', 'Churches & Landowners — ii Miami', 'For churches and landowners in Florida: build homes and income on your land without selling it. Your land becomes your stake, with a clear path to full ownership.', landp, 'land')
 
 # ------------------------------------------------------------------ J & C PREMIER BUILDERS
 jc = '''
@@ -565,7 +565,7 @@ page('jc-premier-builders.html', 'J & C Premier Builders — Certified Florida B
 REG = "mailto:invest@ii.miami?subject=Limited%20partner%20interest&body=Name%3A%0AEntity%20(if%20any)%3A%0AAccredited%20investor%20(yes%2Fno)%3A%0AInvestment%20range%3A%0AInterest%3A%20income%20hold%20%2F%20development%20%2F%20both%0APhone%3A%0A"
 lp = '''
 <section class="hero short" style="padding:0">
-  <img src="images/dev-hero.jpg" alt="">
+  <img src="images/yorgo-site-plan.jpg" alt="">
   <div class="wrap">
     <div class="eyebrow">Limited partners</div>
     <h1>Own the building,<br>not the <em>flip.</em></h1>
