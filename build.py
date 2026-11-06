@@ -18,6 +18,7 @@ HEAD = '''<!doctype html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
+<script>document.documentElement.className+=' js'</script>
 </head>
 <body>
 <header class="nav" id="nav">
@@ -28,6 +29,7 @@ HEAD = '''<!doctype html>
       <li><a href="index.html"{on_home}>Home</a></li>
       <li><a href="properties.html"{on_prop}>Properties</a></li>
       <li><a href="development.html"{on_dev}>Development</a></li>
+      <li><a href="landowners.html"{on_land}>Landowners</a></li>
       <li><a href="jc-premier-builders.html"{on_jc}>J &amp; C Premier Builders</a></li>
       <li><a href="limited-partners.html"{on_invest}>Invest</a></li>
       <li><a href="about.html"{on_about}>About</a></li>
@@ -78,7 +80,7 @@ FOOT = '''
 '''
 
 def page(fname, title, desc, body, on):
-    flags = {k: '' for k in ['on_home','on_prop','on_dev','on_jc','on_invest','on_about']}
+    flags = {k: '' for k in ['on_home','on_prop','on_dev','on_land','on_jc','on_invest','on_about']}
     flags['on_' + on] = ' class="on"'
     html = HEAD.format(title=title, desc=desc, **flags) + body + FOOT.replace('{year}', '2026')
     with open(os.path.join(OUT, fname), 'w') as f: f.write(html)
@@ -91,7 +93,7 @@ home = '''
   <div class="wrap">
     <div class="eyebrow">Florida · Since 2001</div>
     <h1>We build<br>what we <em>sell.</em></h1>
-    <p>Development, construction and brokerage under one roof. Twenty-five years of Florida projects, from single-family estates to 300-unit communities, built and sold by the same people.</p>
+    <p>Development, construction and brokerage under one roof. Florida projects from single-family estates to townhouse communities, built and sold by the same people.</p>
     <div class="btns"><a class="btn btn-fill" href="development.html">Our Work</a><a class="btn btn-line" href="about.html#contact">Contact</a></div>
   </div>
   <div class="scroll-hint">Scroll</div>
@@ -117,7 +119,7 @@ home = '''
         <h2 class="lede">We build it, we own it, and we invite a few partners to own it <em>with us.</em></h2>
       </div>
       <div class="prose reveal">
-        <p>Since 2001 the ii Miami group has developed, built and brokered its own projects across Florida &mdash; more than 250 homes since 2005, and 300-plus units now in development. We are opening select long-term, income-producing holds to limited partners.</p>
+        <p>Since 2004 ii Miami has developed, built and sold its own projects across Florida &mdash; more than 250 homes since 2005, and 300-plus units now in development. We are opening select long-term, income-producing holds to limited partners.</p>
         <p>One sponsor controls each deal and invests alongside you. Related-party brokerage, construction and asset management are disclosed up front and paid at market. No hidden fees, ever.</p>
         <div class="btns"><a class="btn btn-dark" href="limited-partners.html">Invest with us &rarr;</a></div>
       </div>
@@ -125,7 +127,7 @@ home = '''
     <div class="stats reveal">
       <div class="stat"><b>250+</b><span>Homes developed since 2005</span></div>
       <div class="stat"><b>300+</b><span>Units in development</span></div>
-      <div class="stat"><b>2001</b><span>Developing across Florida since</span></div>
+      <div class="stat"><b>1988</b><span>Licensed Florida broker since</span></div>
     </div>
   </div>
 </section>
@@ -135,7 +137,7 @@ home = '''
     <div class="eyebrow reveal">Currently building</div>
     <h2 class="lede reveal">On the ground <em>now.</em></h2>
     <div class="grid reveal">
-      <a class="card" href="development.html"><div class="ph"><img src="images/lincoln-blvd.jpg" alt="Lincoln Boulevard townhouses rendering" loading="lazy"></div><div class="tag">Miami</div><h4>Lincoln Boulevard</h4><p>New construction · 27 townhouses · 3/2.5</p></a>
+      <a class="card" href="development.html"><div class="ph"><img src="images/lincoln-rendering.jpg" alt="Rendering of the Lincoln Boulevard townhouses, Miami" loading="lazy"></div><div class="tag">Miami</div><h4>Lincoln Boulevard</h4><p>New construction · 27 townhouses · 3/2.5</p></a>
       <a class="card" href="2420-novus.html"><div class="ph"><img src="images/2420-novus.jpg" alt="2420 Novus Street, Sarasota" loading="lazy"></div><div class="tag">Sarasota</div><h4>Novus Street</h4><p>New construction · luxury single-family</p></a>
       <a class="card" href="properties.html"><div class="ph"><img src="images/831-siesta-rendering.jpg" alt="831 Siesta Drive rendering" loading="lazy"></div><div class="tag">Sarasota</div><h4>831 Siesta Drive</h4><p>Land or build-to-suit · luxury 5+ bedroom</p></a>
     </div>
@@ -175,8 +177,8 @@ prop = '''
       <div class="prose reveal"><p>Every property here is owned or developed by the ii Miami group. Some are listed with our own Irving Group, Inc., a licensed Florida broker; others with outside brokerages, as noted. Related-party interests are disclosed on every deal.</p></div>
     </div>
     <div class="grid two-up reveal">
-      <a class="card" href="https://519rountree.com/" rel="noopener"><div class="ph"><img src="images/519-rountree-dusk.jpg" alt="519 Rountree Drive, Longboat Key, at dusk" loading="lazy"></div><div class="tag">Longboat Key, FL</div><h4>519 Rountree Drive</h4><p>New construction · waterfront · dock &amp; lift · listed by Compass</p><span class="link">View property</span></a>
-      <a class="card" href="https://733tiziano.com/" rel="noopener"><div class="ph"><img src="images/733-tiziano.jpg" alt="733 Tiziano Avenue, Coral Gables — oak canopy street" loading="lazy"></div><div class="tag">Coral Gables, FL</div><h4>733 Tiziano Avenue</h4><p>±10,200 sf homesite · Platinum Triangle · coming soon</p><span class="link">View property</span></a>
+      <a class="card" href="https://519rountree.com/" rel="noopener"><div class="ph"><img src="images/519-rountree-dusk.jpg" alt="519 Rountree Drive, Longboat Key, at dusk" loading="lazy"></div><div class="tag">Longboat Key, FL</div><h4>519 Rountree Drive</h4><p>New construction · waterfront · dock &amp; 13,000-lb elevator boat lift · listed by Compass</p><span class="link">View property</span></a>
+      <a class="card" href="https://733tiziano.com/" rel="noopener"><div class="ph"><img src="images/733-tiziano.jpg" alt="733 Tiziano Avenue, Coral Gables — oak canopy street" loading="lazy"></div><div class="tag">Coral Gables, FL</div><h4>733 Tiziano Avenue</h4><p>±10,200 sf homesite · Platinum Triangle · under contract</p><span class="link">View property</span></a>
       <a class="card" href="831-siesta.html"><div class="ph"><img src="images/831-siesta-rendering.jpg" alt="831 Siesta Drive concept rendering" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>831 Siesta Drive</h4><p>Vacant residential lot or luxury 5+ bedroom build-to-suit</p><span class="link">View property</span></a>
       <a class="card" href="2420-novus.html"><div class="ph"><img src="images/2420-novus.jpg" alt="2420 Novus Street, Sarasota" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>2420 Novus Street</h4><p>New construction · 4 bed / 4 bath · pool · $2,250,000</p><span class="link">View property</span></a>
     </div>
@@ -254,7 +256,7 @@ novus = '''
     <div>
       <div class="eyebrow">Sarasota, FL · East of the Trail · New construction</div>
       <h1>2420 Novus <em>Street</em></h1>
-      <p>A new two-story contemporary on a canopied street, directly across from the Legacy Trail and five minutes from downtown Sarasota. Four bedrooms, four full baths, a 20-foot great room, heated saltwater pool and spa. Completion October 2026. The same-size lot next door is available to the buyer.</p>
+      <p>A new two-story contemporary on a canopied street, directly across from the Legacy Trail and five minutes from downtown Sarasota. Four bedrooms, four full baths, a 20-foot great room, heated saltwater pool and spa. Estimated completion November 2026. The same-size lot next door is available to the buyer.</p>
       <div class="btns"><a class="btn btn-fill" href="''' + NOVUS_MLS + '''" rel="noopener">View MLS listing</a><a class="btn btn-line" href="''' + NOVUS_MAIL + '''&body=I%27d%20like%20to%20schedule%20a%20showing.">Schedule a showing</a></div>
     </div>
     <figure class="split-ph"><img src="images/2420-novus.jpg" alt="Rendering of 2420 Novus Street: a two-story contemporary with a stone-clad entry and a two-car garage"><figcaption>Rendering</figcaption></figure>
@@ -269,7 +271,7 @@ novus = '''
       <div class="stat"><b>2,802</b><span>SF under air</span></div>
       <div class="stat"><b>3,396</b><span>SF total</span></div>
       <div class="stat"><b>2-car</b><span>Garage · bonus room</span></div>
-      <div class="stat"><b>Oct 2026</b><span>Est. completion</span></div>
+      <div class="stat"><b>Nov 2026</b><span>Est. completion</span></div>
     </div>
   </div>
 </section>
@@ -346,7 +348,7 @@ novus = '''
         <h2 class="lede">The lot next door, <em>if you want it.</em></h2>
       </div>
       <div class="prose reveal">
-        <p>2410 Novus is the same-size lot directly beside the house, split from the same original parcel. It is available to the buyer of 2420, either as land or as a build-to-suit by J &amp; C Premier Builders.</p>
+        <p>2410 Novus is the same-size lot directly beside the house, split from the same original parcel. It is available to the buyer of 2420, either as land or as a build-to-suit by J &amp; C Premier Builders. 2410 Novus is owned by an affiliated company in which the principals hold an interest.</p>
         <p>Buying both gives you room few homes this close to downtown have: more space, a second home for family, or future expansion. Any construction is subject to zoning and permitting.</p>
         <div class="btns" style="margin-top:22px"><a class="btn btn-dark" href="mailto:2420@ii.miami?subject=2420%20and%202410%20Novus&body=I%27m%20interested%20in%20buying%202420%20Novus%20together%20with%20the%20lot%20next%20door.">Ask about buying both</a></div>
       </div>
@@ -368,7 +370,7 @@ page('2420-novus.html', '2420 Novus Street, Sarasota — New Construction', 'New
 
 # ------------------------------------------------------------------ DEVELOPMENT
 completed = [
- ('519-rountree-dusk.jpg','519 Rountree','Waterfront custom build · Longboat Key, FL','https://519rountree.com/'),
+ ('519-rountree-dusk.jpg','519 Rountree','Waterfront custom build · 13,000-lb elevator boat lift · Longboat Key, FL','https://519rountree.com/'),
  ('cedar-woods.jpg','Cedar Woods','165 units · Homestead, FL',None),
  ('chateau-de-ville.jpg','Chateau de Ville','72 units · Dania Beach, FL',None),
  ('cedar-west.jpg','Cedar West','135 units · Homestead, FL',None),
@@ -390,12 +392,12 @@ dev = f'''
 <section>
   <div class="wrap">
     <div class="feature">
-      <div class="ph reveal"><img src="images/lincoln-blvd.jpg" alt="Build-to-rent townhouse rendering" loading="lazy"></div>
+      <div class="ph reveal"><img src="images/dev-hero.jpg" alt="Build-to-rent townhouse community rendering" loading="lazy"></div>
       <div class="reveal">
         <div class="eyebrow">In development</div>
         <h2 class="lede">Three-phase build-to-rent <em>townhouse</em> community.</h2>
         <ul>
-          <li>360 two-story build-to-rent townhouses</li>
+          <li>About 300 two-story build-to-rent townhouses</li>
           <li>2–4 bedroom floorplans</li>
           <li>Three phases · Florida</li>
         </ul>
@@ -423,7 +425,88 @@ dev = f'''
   </div>
 </section>
 '''
-page('development.html', 'Development — ii Miami', 'Residential and retail development across Florida. 360-unit build-to-rent townhouse community in development; Cedar Woods, Cedar West, Chateau de Ville and retail centers in Doral completed.', dev, 'dev')
+page('development.html', 'Development — ii Miami', 'Residential and retail development across Florida. About 300-unit build-to-rent townhouse community in development; Cedar Woods, Cedar West, Chateau de Ville and retail centers in Doral completed.', dev, 'dev')
+
+# ------------------------------------------------------------------ LANDOWNERS & CHURCHES
+# Short URL for the church flyer: ii.miami/churches (redirect stub in churches/index.html).
+# Keep this page free of returns, percentages or "invest" language: it is not an offering.
+LAND_MAIL = "mailto:properties@ii.miami?subject=Land%20partnership&body=Church%20or%20owner%3A%0AProperty%20address%3A%0AApproximate%20size%3A%0ABest%20phone%3A%0A"
+landp = """
+<section class="hero short" style="padding:0">
+  <img src="images/lincoln-rendering.jpg" alt="">
+  <div class="wrap">
+    <div class="eyebrow">Landowners &amp; churches</div>
+    <h1>Keep your land <em>working.</em></h1>
+    <p>Your land can build homes and income for your church or family, without selling it for a one-time check.</p>
+    <div class="btns"><a class="btn btn-fill" href=\"""" + LAND_MAIL + """\">Talk with us</a><a class="btn btn-line" href="#how">How it works</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow reveal">Before you sign anything</div>
+    <h2 class="lede reveal">Three things to <em>avoid.</em></h2>
+    <div class="pillars reveal">
+      <div class="pillar"><div class="num">01</div><h3>Selling for a one-time check</h3><p>A sale ends your stake in your own ground.</p></div>
+      <div class="pillar"><div class="num">02</div><h3>Giving up ownership with no way back</h3><p>Every deal should show how you can own it all in the end.</p></div>
+      <div class="pillar"><div class="num">03</div><h3>Putting your church or credit at risk</h3><p>Only the land you choose to contribute should be part of the project, and you should never sign a loan guarantee.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <div class="two">
+      <div class="reveal">
+        <div class="eyebrow">What a good deal looks like</div>
+        <h2 class="lede">Your land, your stake, your <em>path to ownership.</em></h2>
+      </div>
+      <div class="prose reveal">
+        <p><strong>Your land becomes your stake.</strong> Instead of selling, you contribute your land to the project and own a share of it from day one.</p>
+        <p><strong>A clear path to owning it all.</strong> Rental communities: you can buy out the developer once the community is built and leased. Homes for sale: keep some homes or share in the sales.</p>
+        <p><strong>Income for your mission.</strong> A share of the community's income, and homes for your church family, staff and seniors.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="two">
+      <div class="reveal">
+        <div class="eyebrow">How it works</div>
+        <h2 class="lede">Four steps, at <em>your pace.</em></h2>
+      </div>
+      <div class="prose reveal">
+        <p><strong>1. Talk with us.</strong> No cost and no obligation. We look at your land and listen to what you hope for.</p>
+        <p><strong>2. See your options.</strong> Rental or for-sale, what can be built, and what you would own.</p>
+        <p><strong>3. Your attorney reviews everything.</strong> Nothing moves until your own counsel is satisfied.</p>
+        <p><strong>4. We build it.</strong> II MIAMI arranges the financing, signs the loan guarantees and builds through our own licensed contractor, J &amp; C Premier Builders (CBC #1266533). You share the income and keep your path to full ownership.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <div class="eyebrow reveal">Our experience, your solution</div>
+    <h2 class="lede reveal">The hard parts are <em>our work.</em></h2>
+    <p class="sub reveal" style="max-width:62ch;margin-top:28px">Land covenants · Entitlements and zoning, including Florida's law for housing on church-owned land · Land issues · Mortgaged properties · Cash-poor properties · Upside-down properties</p>
+    <p class="reveal" style="max-width:62ch;margin-top:18px">We help you evaluate, structure and negotiate a deal that fits your situation and keeps your land working for your mission.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow reveal" style="display:inline-block">Our promise</div>
+    <h2 class="lede reveal">If we can't help, we'll tell you within <em>24 hours.</em></h2>
+    <p class="sub reveal">Led by a licensed Florida real estate broker since 1988, developing our own projects since 2004.</p>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href=\"""" + LAND_MAIL + """\">Email properties@ii.miami</a><a class="btn btn-line" href="tel:+13059002100">Call +1 305-900-2100</a></div>
+    <p class="sub reveal" style="font-size:12px;opacity:.7;margin-top:28px">Every structure is reviewed by your own attorney before anything is signed. This page describes ways landowners and churches can work with a developer. It is not an offer to sell or buy any investment.</p>
+  </div>
+</section>
+"""
+page('landowners.html', 'Landowners & Churches — ii Miami', 'For churches and landowners in Florida: build homes and income on your land without selling it. Your land becomes your stake, with a clear path to full ownership.', landp, 'land')
 
 # ------------------------------------------------------------------ J & C PREMIER BUILDERS
 jc = '''
@@ -456,12 +539,12 @@ jc = '''
 
 <section>
   <div class="wrap">
-    <div class="eyebrow reveal">Projects under development</div>
+    <div class="eyebrow reveal">Current and recent projects</div>
     <h2 class="lede reveal">On the <em>boards.</em></h2>
     <div class="grid four-up reveal">
-      <a class="card" href="https://www.google.com/maps/place/14654+Lincoln+Blvd,+Miami,+FL" rel="noopener"><div class="ph"><img src="images/lincoln-blvd.jpg" alt="Lincoln Boulevard townhouses" loading="lazy"></div><div class="tag">Miami, FL</div><h4>Lincoln Boulevard</h4><p>New construction · 27 townhouses · 3/2.5 units · 14654 Lincoln Blvd</p></a>
+      <a class="card" href="https://www.google.com/maps/place/14654+Lincoln+Blvd,+Miami,+FL" rel="noopener"><div class="ph"><img src="images/lincoln-rendering.jpg" alt="Rendering of the Lincoln Boulevard townhouses" loading="lazy"></div><div class="tag">Miami, FL</div><h4>Lincoln Boulevard</h4><p>New construction · 27 townhouses · 3/2.5 units · 14654 Lincoln Blvd</p></a>
       <a class="card" href="https://www.google.com/maps/place/2410+Novus+St,+Sarasota,+FL+34237" rel="noopener"><div class="ph"><img src="images/novus-street.jpg" alt="Novus Street homes" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>Novus Street</h4><p>New construction · 2 modern single-family homes · 2410 Novus St</p></a>
-      <a class="card" href="https://519rountree.com/" rel="noopener"><div class="ph"><img src="images/519-rountree-b.jpg" alt="519 Rountree Drive, Longboat Key" loading="lazy"></div><div class="tag">Longboat Key, FL</div><h4>Rountree Drive</h4><p>New construction · luxury waterfront home · 519 Rountree Dr</p></a>
+      <a class="card" href="https://519rountree.com/" rel="noopener"><div class="ph"><img src="images/519-rountree-b.jpg" alt="519 Rountree Drive, Longboat Key" loading="lazy"></div><div class="tag">Longboat Key, FL</div><h4>Rountree Drive</h4><p>Completed · luxury waterfront home · 519 Rountree Dr</p></a>
       <a class="card" href="831-siesta.html"><div class="ph"><img src="images/831-siesta-aerial.jpg" alt="831 Siesta Drive aerial" loading="lazy"></div><div class="tag">Sarasota, FL</div><h4>Siesta Drive</h4><p>Land or build to suit · luxury home · 831 Siesta Dr</p></a>
     </div>
   </div>
@@ -496,17 +579,17 @@ lp = '''
     <div class="two">
       <div class="reveal">
         <div class="eyebrow">Why partner with us</div>
-        <h2 class="lede">Twenty-five years of building for <em>ourselves.</em></h2>
+        <h2 class="lede">Building for <em>ourselves</em> since 2004.</h2>
       </div>
       <div class="prose reveal">
-        <p>Since 2001 the ii Miami group has developed, built and brokered its own projects across Florida: single-family estates, townhouse communities, condominium towers and retail centers. More than 250 homes since 2005. More than 300 units in development today.</p>
+        <p>Since 2004 ii Miami has developed, built and sold its own projects across Florida: single-family estates, townhouse communities, condominium towers and retail centers. More than 250 homes since 2005. More than 300 units in development today.</p>
         <p>We have always invested our own capital. We are now opening select long-term holds to a small number of limited partners who want durable income from real assets and a sponsor they can call.</p>
       </div>
     </div>
     <div class="stats reveal">
       <div class="stat"><b>250+</b><span>Homes developed since 2005</span></div>
       <div class="stat"><b>300+</b><span>Units in development</span></div>
-      <div class="stat"><b>2001</b><span>Developing across Florida since</span></div>
+      <div class="stat"><b>1988</b><span>Licensed Florida broker since</span></div>
     </div>
   </div>
 </section>
@@ -587,13 +670,14 @@ about = '''
       </div>
       <div class="prose reveal">
         <p>Each deal is its own structure, sponsor-managed, with the sponsor's own capital alongside partners'. We are now opening select long-term, income-producing holds to <a href="limited-partners.html">limited partners</a>.</p>
-        <p>Since 2001 the group has developed, built and brokered single-family estates, townhouse communities of up to 300 units, condominiums, and retail centers for national tenants across South Florida and the Gulf Coast.</p>
+        <p>Since 2004 the group has developed, built and sold single-family estates, townhouse communities, condominiums, and retail centers for national tenants across South Florida and the Gulf Coast.</p>
+        <p>The group is led by James Irving, a licensed Florida real estate broker since 1988, who founded Irving Group in 2001 and ii Miami in 2004.</p>
       </div>
     </div>
     <div class="stats reveal">
       <div class="stat"><b>250+</b><span>Homes developed since 2005</span></div>
       <div class="stat"><b>300+</b><span>Units in development</span></div>
-      <div class="stat"><b>2001</b><span>Developing across Florida since</span></div>
+      <div class="stat"><b>1988</b><span>Licensed Florida broker since</span></div>
     </div>
   </div>
 </section>
@@ -604,7 +688,7 @@ about = '''
     <h2 class="lede reveal">Three companies, one <em>sponsor.</em></h2>
     <div class="pillars reveal">
       <a class="pillar" href="properties.html"><div class="num">Est. 2001</div><h3>Irving Group, Inc.</h3><p>Commercial real estate and business brokerage. Licensed Florida broker.</p><span class="go">Brokerage →</span></a>
-      <a class="pillar" href="development.html"><div class="num">Development</div><h3>ii Miami</h3><p>Sponsor and developer of residential and retail projects across Florida.</p><span class="go">Projects →</span></a>
+      <a class="pillar" href="development.html"><div class="num">Est. 2004</div><h3>ii Miami</h3><p>Sponsor and developer of residential and retail projects across Florida.</p><span class="go">Projects →</span></a>
       <a class="pillar" href="jc-premier-builders.html"><div class="num">CBC #1266533</div><h3>J &amp; C Premier Builders</h3><p>Certified Florida building contractor. Residential and retail construction.</p><span class="go">Construction →</span></a>
     </div>
   </div>
@@ -620,4 +704,4 @@ about = '''
   </div>
 </section>
 '''
-page('about.html', 'About — ii Miami', 'The ii group of companies: Florida real estate developers, brokers and investors since 2001. More than 250 homes developed since 2005; 300-plus units in development.', about, 'about')
+page('about.html', 'About — ii Miami', 'The ii group of companies: Florida real estate developers, brokers and investors. Licensed Florida broker since 1988; developing since 2004. More than 250 homes developed since 2005; 300-plus units in development.', about, 'about')
