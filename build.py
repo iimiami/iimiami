@@ -56,7 +56,7 @@ FOOT = '''
     <div>
       <h5>Contact</h5>
       <ul>
-        <li><a href="mailto:properties@ii.miami">properties@ii.miami</a></li>
+        <li><a href="mailto:dev@ii.miami">dev@ii.miami</a></li>
         <li><a href="tel:+13059002100">+1 305-900-2100</a></li>
         <li>550 Biltmore Way, Mezzanine Ste. 200<br>Coral Gables, FL 33134</li>
         <li style="margin-top:12px"><a href="https://www.linkedin.com/company/iimiami" rel="noopener">LinkedIn</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/@iimiami" rel="noopener">YouTube</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/ii.miami" rel="noopener">Facebook</a></li>
@@ -149,7 +149,7 @@ home = '''
     <div class="eyebrow reveal" style="display:inline-block">Contact</div>
     <h2 class="lede reveal">Tell us what you're looking to <em>build, buy or back.</em></h2>
     <p class="sub reveal" style="color:#3a3e45">Investors, buyers, brokers and landowners: we answer our own phone.</p>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-dark" href="mailto:properties@ii.miami?subject=ii%20Miami%20inquiry">Email</a><a class="btn btn-dark" href="tel:+13059002100">Call +1 305-900-2100</a></div>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-dark" href="mailto:dev@ii.miami?subject=ii%20Miami%20inquiry">Email</a><a class="btn btn-dark" href="tel:+13059002100">Call +1 305-900-2100</a></div>
     <div class="addr reveal" style="color:#5f646c">550 Biltmore Way, Mezzanine Ste. 200 · Coral Gables, FL 33134</div>
   </div>
 </section>
@@ -401,7 +401,7 @@ dev = f'''
           <li>2–4 bedroom floorplans</li>
           <li>Three phases · Florida</li>
         </ul>
-        <a class="btn btn-fill" href="mailto:info@ii.miami?subject=Please%20sign%20me%20up%20for%20the%20investment%20newsletter&body=My%20primary%20real%20estate%20investment%20interest%20is%20in%20the%20________%20%5Bmulti-family%2FSFR%2Fretail%2Fland%5D%20asset%20class.">Request information</a>
+        <a class="btn btn-fill" href="mailto:dev@ii.miami?subject=Please%20sign%20me%20up%20for%20the%20investment%20newsletter&body=My%20primary%20real%20estate%20investment%20interest%20is%20in%20the%20________%20%5Bmulti-family%2FSFR%2Fretail%2Fland%5D%20asset%20class.">Request information</a>
       </div>
     </div>
   </div>
@@ -430,7 +430,7 @@ page('development.html', 'Development — ii Miami', 'Residential and retail dev
 # ------------------------------------------------------------------ LANDOWNERS & CHURCHES
 # Short URL for the church flyer: ii.miami/churches (redirect stub in churches/index.html).
 # Keep this page free of returns, percentages or "invest" language: it is not an offering.
-LAND_MAIL = "mailto:properties@ii.miami?subject=Land%20partnership&body=Church%20or%20owner%3A%0AProperty%20address%3A%0AApproximate%20size%3A%0ABest%20phone%3A%0A"
+LAND_MAIL = "mailto:dev@ii.miami?subject=Land%20partnership&body=Church%20or%20owner%3A%0AProperty%20address%3A%0AApproximate%20size%3A%0ABest%20phone%3A%0A"
 landp = """
 <section class="hero short" style="padding:0">
   <img src="images/lincoln-rendering.jpg" alt="">
@@ -501,7 +501,7 @@ landp = """
     <div class="eyebrow reveal" style="display:inline-block">Our promise</div>
     <h2 class="lede reveal">If we can't help, we'll tell you within <em>24 hours.</em></h2>
     <p class="sub reveal">Led by a licensed Florida real estate broker since 1988, developing our own projects since 2004.</p>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href=\"""" + LAND_MAIL + """\">Email properties@ii.miami</a><a class="btn btn-line" href="tel:+13057031500">Call +1 305-703-1500</a></div>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-fill" href=\"""" + LAND_MAIL + """\">Email dev@ii.miami</a><a class="btn btn-line" href="tel:+13057031500">Call +1 305-703-1500</a></div>
     <p class="sub reveal" style="font-size:12px;opacity:.7;margin-top:28px">Every structure is reviewed by your own attorney before anything is signed. This page describes ways landowners and churches can work with a developer. It is not an offer to sell or buy any investment.</p>
   </div>
 </section>
@@ -698,7 +698,7 @@ about = '''
   <div class="wrap">
     <div class="eyebrow reveal" style="display:inline-block">Contact</div>
     <h2 class="lede reveal">Coral <em>Gables.</em></h2>
-    <div class="btns reveal" style="justify-content:center"><a class="btn btn-dark" href="mailto:properties@ii.miami">properties@ii.miami</a><a class="btn btn-dark" href="tel:+13059002100">+1 305-900-2100</a></div>
+    <div class="btns reveal" style="justify-content:center"><a class="btn btn-dark" href="mailto:dev@ii.miami">dev@ii.miami</a><a class="btn btn-dark" href="tel:+13059002100">+1 305-900-2100</a></div>
     <div class="addr reveal" style="color:#5f646c">550 Biltmore Way, Mezzanine Ste. 200 · Coral Gables, FL 33134</div>
     <div class="addr reveal" style="color:#5f646c;margin-top:10px"><a href="https://www.linkedin.com/company/iimiami" rel="noopener" style="text-decoration:none">LinkedIn</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/@iimiami" rel="noopener" style="text-decoration:none">YouTube</a> &nbsp;·&nbsp; <a href="https://www.facebook.com/ii.miami" rel="noopener" style="text-decoration:none">Facebook</a></div>
   </div>
